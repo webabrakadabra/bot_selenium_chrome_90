@@ -37,7 +37,9 @@ else:
     #cookie
     pickle.dump(browser.get_cookies(), open("cookies", "wb"))
 
-#q = input('Введіть "y" для закриття браузера: \n' )
+q = input('Введіть "y" для закриття браузера: \n' )
 
-if input('Введіть "y" для закриття браузера: \n' ) == 'y': 
+if q == 'y' or q == 'н': 
     browser.quit()
+
+browser.quit()
